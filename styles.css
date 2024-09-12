@@ -1,0 +1,196 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff4778;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.mobile-menu-icon span {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+/* Home Section */
+.home-section {
+    background: linear-gradient(to bottom right, #ff4778, #ff84b1);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: white;
+    color: #ff4778;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff84b1;
+}
+
+/* Search Section */
+.search-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.search-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #ff4778;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-section button:hover {
+    background-color: #ff84b1;
+}
+
+#searchResult {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+/* Directory Section */
+.directory-section {
+    padding: 50px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.directory-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.directory-list li {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+/* Important Contacts Section */
+.important-contacts {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.important-contacts ul {
+    list-style: none;
+}
+
+.important-contacts li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Analytics Section */
+.analytics-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#analyticsData {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ff4778;
+}
+
+/* Footer */
+footer {
+    background-color: #ff4778;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: flex;
+    }
+}
