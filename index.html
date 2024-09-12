@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSteps - Women Safety Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SafeSteps</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search Pincode</a></li>
+                <li><a href="#directory">Police Directory</a></li>
+                <li><a href="#contacts">Important Numbers</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h1>Your First Step to Safety</h1>
+            <p>Locate police stations, access emergency contacts, and view real-time analytics on women’s safety across Delhi-NCR.</p>
+            <a href="#search" class="cta-btn">Start Your Search</a>
+        </div>
+    </section>
+
+    <section id="search" class="search-section">
+        <h2>Find Nearby Police Station</h2>
+        <form id="pincodeForm">
+            <input type="text" id="pincode" placeholder="Enter Your Pincode">
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResult"></div>
+    </section>
+
+    <section id="directory" class="directory-section">
+        <h2>Police Station Directory</h2>
+        <div class="directory-list">
+            <ul id="stationList"></ul>
+        </div>
+    </section>
+
+    <section id="contacts" class="important-contacts">
+        <h2>Important Helpline Numbers</h2>
+        <ul>
+            <li>Women Helpline: <strong>1091</strong></li>
+            <li>Police: <strong>100</strong></li>
+            <li>Ambulance: <strong>102</strong></li>
+            <li>Emergency Response: <strong>112</strong></li>
+        </ul>
+    </section>
+
+    <section id="analytics" class="analytics-section">
+        <h2>Real-Time Safety Analytics</h2>
+        <div id="analyticsData">Loading analytics...</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SafeSteps | Empowering Women’s Safety</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
